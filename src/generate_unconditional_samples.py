@@ -73,7 +73,7 @@ def sample_model(
                 generated += batch_size
                 text = enc.decode(out[i])
                 print("=" * 40 + " SAMPLE " + str(generated) + " " + "=" * 40)
-                print(text.replace(". ", "\n"))
+                print(text.replace(". ", ".\n"))
 
 if __name__ == '__main__':
     fire.Fire(sample_model)
